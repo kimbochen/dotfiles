@@ -15,11 +15,11 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'junegunn/fzf.vim'
   Plug 'jceb/vim-orgmode'
-  " Plug 'lervag/vimtex'
+  Plug 'SirVer/ultisnips'
 
   " Completion plugins
-  Plug 'neoclide/coc.nvim', { 'do': { -> coc#util#install() } }
-  Plug 'Rip-Rip/clang_complete'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'} " Use release branch
+  Plug 'xavierd/clang_complete'
 
   " Appearance plugins
   Plug 'KeitaNakamura/neodark.vim'
@@ -32,6 +32,8 @@ let g:node_host_prog = '/Users/kimbochen/.config/nvim/node_modules/neovim'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
 let g:clang_library_path = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
+
+let g:ale_linters = {'python': ['flake8']}
 
 source ~/.config/nvim/general.vimrc
 source ~/.config/nvim/plugins.vimrc

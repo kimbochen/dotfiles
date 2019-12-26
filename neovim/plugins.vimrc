@@ -10,3 +10,6 @@ let g:lightline.colorscheme = 'wombat'
 let g:ale_fixers = {
  \ 'javascript': ['eslint']
  \ }
+
+" Vimtex config
+let g:tex_flavor = 'latex'

@@ -46,7 +46,9 @@ pip_update() {
 }
 
 # Settings for pipenv
-export PIPENV_VENV_IN_PROJECT=1
+# export PIPENV_VENV_IN_PROJECT=1
 
 # Load .bashrc if it exists
 test -f ~/.bashrc && source ~/.bashrc
+
+export PATH="$HOME/.poetry/bin:$PATH"

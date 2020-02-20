@@ -39,25 +39,29 @@ pip_update()
 # Create a Python virtual environment in the current folder
 create_pyvenv()
 {
-    venv_name=".$(basename $PWD)_venv"
-
     echo "Creating Python virtual environment..."
 
-    if python3 -m venv $venv_name ; then
-        echo "Virtual environment \"$venv_name\" created."
+    if python3 -m venv --prompt $(basename $PWD) .venv ; then
+        activate_pyvenv && pip install --upgrade pip
+
+        if pip install pynvim && deactivate ; then
+            echo "Added NeoVim support packages."
+        else
+            echo "Failed to install packages."
+        fi
+
+        echo "Virtual environment \"$(basename $PWD)\" created."
     else
         echo "Setup failed."
     fi
 }
 
 # Activate the Python virtual environment in the current folder
-activ_pyvenv()
+activate_pyvenv()
 {
-    venv_name=".$(basename $PWD)_venv"
-
     echo "Activating Python virtual environment..."
 
-    if ! source $venv_name/bin/activate ; then
+    if ! source .venv/bin/activate ; then
         echo "There is no Python virtual environment in this folder."
     fi
 }

@@ -17,14 +17,8 @@ export HOMEBREW_GITHUB_API_TOKEN=0d2667a380dfd6eaf6df322bbf94e6aaa83d5aea
 # Ensure user-installed binaries take precedence
 export PATH="$PATH:/usr/local/bin"
 
-# Set PATH for Python 3.7
-export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.7/bin"
-
 # Set PATH for make
 export PATH="$PATH:/usr/local/opt/make/libexec/gnubin"
-
-# Set PATH for sqlite
-export PATH="$PATH:/usr/local/opt/sqlite/bin"
 
 # Set PATH for sbin
 export PATH="$PATH:/usr/local/sbin"
@@ -42,10 +36,8 @@ create_pyvenv()
     echo "Creating Python virtual environment..."
 
     if python3 -m venv --prompt $(basename $PWD) .venv ; then
-        activate_pyvenv && pip install --upgrade pip
-
-        if pip install pynvim && deactivate ; then
-            echo "Added NeoVim support packages."
+        if .venv/bin/pip install --upgrade pip pynvim ; then
+            echo "Added Neovim support packages."
         else
             echo "Failed to install packages."
         fi

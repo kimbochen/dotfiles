@@ -1,0 +1,26 @@
+UseKeychain yes
+AddKeysToAgent yes
+
+Host apollo
+    Hostname apollo.cs.nthu.edu.tw
+    User ipc20202
+
+Host hades
+    Hostname hades.cs.nthu.edu.tw
+    User ipc20202
+
+Host bahamut01
+    Hostname 140.114.85.197
+    User kimbo
+
+Host bahamut02
+    Hostname 140.114.85.201
+    User kimbo
+
+Host bahamut03
+    Hostname 140.114.85.194
+    User kimbo
+
+Host bahamut04
+    Hostname 140.114.85.196
+    User kimbo

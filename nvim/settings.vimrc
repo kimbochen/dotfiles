@@ -20,23 +20,16 @@ set noswapfile
 set nowritebackup
 
 set t_Co=256
+set termguicolors
 colorscheme neodark
 
 set splitright
 set splitbelow
 
 set hidden
-set shortmess+=c
 
 syntax on
 
 set showtabline=1
 set laststatus=2
 set noshowmode
-
-set rtp+=/usr/local/opt/fzf
-
-set mouse=a
-
-autocmd Filetype html setlocal ts=2 sw=2 expandtab
-autocmd Filetype javascript setlocal ts=4 sw=4 expandtab

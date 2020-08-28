@@ -50,4 +50,6 @@ Dotfiles are gathered here and symbolically linked to the `${HOME}` folder.
 - `ln -s "${PWD}/git/.gitignore_global" "${HOME}/.gitignore_global"`
 
 ## Tmux
-- `ln -s "${PWD}/tmux/.tmux.conf" "${HOME}/.tmux.conf"
+
+### Setup
+- `ln -s "${PWD}/tmux/.tmux.conf" "${HOME}/.tmux.conf"`

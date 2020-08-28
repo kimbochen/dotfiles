@@ -15,4 +15,6 @@ alias la="ls -A"
 alias ll="ls -lh"
 alias sl="ls"
 
-PS1="[\u \W] \D{%a-%m-%d-%H-%M} \$ "
+WORK_DIR="\e[1;39m\w\e[m"
+DATE_TIME="\D{%a %H:%M}"
+PS1="[$DATE_TIME] $WORK_DIR\$ "

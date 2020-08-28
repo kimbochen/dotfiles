@@ -8,3 +8,4 @@
 	excludesfile = /Users/kimbochen/.gitignore_global
 [alias]
     lg = log --color --graph --abbrev-commit
+    lgn = log --color --oneline --abbrev-commit

@@ -20,7 +20,6 @@ set noswapfile
 set nowritebackup
 
 set t_Co=256
-set termguicolors
 colorscheme neodark
 
 set splitright

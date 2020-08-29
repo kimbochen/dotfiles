@@ -11,7 +11,7 @@ alias tree="tree --dirsfirst -L 2"
 alias nv="nvidia-smi"
 alias nvl='nvidia-smi -l 1 '  # Live update
 
-alias ls="ls --color=auto --group-directories-first"
+alias ls="ls --color=auto --group-directories-first -X"
 alias la="ls -A"
 alias ll="ls -lh"
 alias sl="ls"
@@ -36,3 +36,4 @@ fi
 
 # Miniconda
 source /home/kimbo/.miniconda/etc/profile.d/conda.sh
+source /home/kimbo/.miniconda/etc/profile.d/bash_completion.sh

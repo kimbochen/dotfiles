@@ -1,4 +1,4 @@
-" Automaticalyy install Vim Plug if it doesn't exist
+" Automatically install Vim Plug if it doesn't exist
 if isdirectory(expand("$HOME/.vim/autoload")) == 0
   silent !curl -fLo "${HOME}/.vim/autoload/plug.vim" --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -15,6 +15,7 @@ call plug#begin("~/.vim-plugs")
 
   " Appearance
   Plug 'KeitaNakamura/neodark.vim'
+  Plug 'rafi/awesome-vim-colorschemes'
   Plug 'itchyny/lightline.vim'
 
   " External features
@@ -23,9 +24,12 @@ call plug#end()
 
 
 " Colorscheme configs
-colorscheme neodark
-let g:neodark#use_256color = 1 " default: 0
+let g:sonokai_style = 'shusia'
+let g:sonokai_better_performance = 1
+colorscheme sonokai
+
+" let g:neodark#use_256color = 1
+" colorscheme neodark
 
 " Status line configs
-let g:lightline = {}
-let g:lightline.colorscheme = 'wombat'
+let g:lightline = {'colorscheme': 'sonokai'}

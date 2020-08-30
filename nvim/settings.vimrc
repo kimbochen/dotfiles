@@ -20,14 +20,11 @@ set noswapfile
 set nowritebackup
 
 set t_Co=256
-colorscheme neodark
+syntax on
 
 set splitright
 set splitbelow
-
 set hidden
-
-syntax on
 
 set showtabline=1
 set laststatus=2

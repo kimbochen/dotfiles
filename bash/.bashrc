@@ -7,9 +7,12 @@ set -o emacs    # Set command editing shortcuts to Emacs.
 alias rm="rm -i"
 alias mv="mv -i"
 alias mkdir="mkdir -p"
-alias tree="tree --dirsfirst -L 2"
+
 alias nv="nvidia-smi"
 alias nvl='nvidia-smi -l 1 '  # Live update
+
+alias tree="tree --dirsfirst -L 2"
+alias treel="tree -pu"
 
 alias ls="ls --color=auto --group-directories-first -X"
 alias la="ls -A"

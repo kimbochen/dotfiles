@@ -13,7 +13,6 @@ export CUDA_VISIBLE_DEVICES=0,1,2
 export EDITOR="vim"
 
 # Set coloring for listings
-export CLICOLOR=1
 export LS_COLORS="$(vivid generate snazzy)"
 
 # Time format

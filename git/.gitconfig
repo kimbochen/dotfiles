@@ -1,6 +1,6 @@
 [user]
 	name = kimbochen
-	email = chentenghung@gmail.com
+	email = github@thc.anonaddy.com
 [color]
 	ui = true
 [core]
@@ -8,4 +8,6 @@
 	excludesfile = /Users/kimbochen/.gitignore_global
 [alias]
     lg = log --color --graph --abbrev-commit
-    lgn = log --color --oneline --abbrev-commit
+    ll = log --color --oneline --abbrev-commit
+[init]
+	defaultBranch = master

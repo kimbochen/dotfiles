@@ -14,6 +14,7 @@ call plug#begin("~/.nvim-plugs")
 
   " Appearance
   Plug 'KeitaNakamura/neodark.vim'
+  Plug 'rafi/awesome-vim-colorschemes'
   Plug 'itchyny/lightline.vim'
 
   " External features
@@ -22,9 +23,9 @@ call plug#end()
 
 
 " Colorscheme configs
-colorscheme neodark
-let g:neodark#use_256color = 1 " default: 0
+let g:sonokai_style = 'shusia'
+let g:sonokai_better_performance = 1
+colorscheme sonokai
 
 " Status line configs
-let g:lightline = {}
-let g:lightline.colorscheme = 'wombat'
+let g:lightline = {'colorscheme': 'sonokai'}

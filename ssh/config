@@ -1,5 +1,7 @@
-UseKeychain yes
 AddKeysToAgent yes
+ServerAliveInterval	60
+StrictHostKeyChecking no
+UseKeychain yes
 
 Host apollo
     Hostname apollo.cs.nthu.edu.tw
@@ -24,3 +26,7 @@ Host bahamut03
 Host bahamut04
     Hostname 140.114.85.196
     User kimbo
+
+Host bigbird
+    Hostname bigbird.ee.nthu.edu.tw
+    User u106062202
